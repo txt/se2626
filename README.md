@@ -22,6 +22,9 @@ AI presents unique challenges and opportunities when applied to software enginee
  
 ## About the lecturer
 
+
+ <img align=right src="https://github.com/user-attachments/assets/f91ad70d-8139-439f-b2db-410520d656b2" width=400>
+ 
 Tim Menzies (Ph.D. UNSW 1995, **ACM Fellow**, **IEEE Fellow**, ASE Fellow) is a globally recognized leader in software engineering research, best known for his pioneering work in data-driven, explainable, and minimal AI for software systems. Over the past two decades, his contributions have redefined defect prediction, effort estimation, and multi-objective optimization, emphasizing transparency and reproducibility. 
 
 As the co-creator of the **PROMISE repository,** Prof. Menzies helped establish modern **empirical software engineering,** showing that small, interpretable AI models can outperform larger, more complex ones. Currently, he works as a full Professor in computer science at NC State, USA. He is the director of the **Irrational Research lab** (mad scientists r'us). His research has earned over** $19+ million** in funding from agencies such as NSF, DARPA, and NASA, as well as from private companies like Meta, Microsoft and IBM. 
