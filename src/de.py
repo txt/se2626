@@ -34,7 +34,7 @@ f4 = lambda x: -20*m.exp(-.2*m.sqrt(sum(xi**2 for xi in x)/len(x))) \
 if x := de(f4, iters=200): print(f"4\t{f4(x):.2f}\t{[f'{xi:.2f}' for xi in x]}")
 
 """
-Output:
+Desired output:
 	y	x
 1	0.00	['0.00', '0.00']
 2	0.00	['1.00', '1.00']
