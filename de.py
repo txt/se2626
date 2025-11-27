@@ -3,17 +3,19 @@ import random as r
 import math as m
 r.seed(1)
 
-def de(f, n=4, d=2, cr=0.8, F=0.5, iters=100, lo=-5, hi=5):
+def de(f, n=20, d=2, cr=0.9, F=0.8, iters=100, lo=-5, hi=5):
   pop = [[r.uniform(lo,hi) for _ in range(d)] for _ in range(n)]
   for _ in range(iters):
     for i in range(n):
       a,b,c = r.sample([p for j,p in enumerate(pop) if j!=i], 3)
-      y = [a[j] + F*(b[j]-c[j]) if r.random()<cr else pop[i][j] 
+      j_rand = r.randrange(d)  # ensure at least one from mutant
+      y = [a[j] + F*(b[j]-c[j]) if r.random()<cr or j==j_rand else pop[i][j] 
            for j in range(d)]
       if f(y) < f(pop[i]): pop[i] = y
   return min(pop, key=f)
 
 print("\ty\tx")
+
 # Sphere: min at (0,0)
 f1 = lambda x: sum(xi**2 for xi in x)
 if x := de(f1): print(f"1\t{f1(x):.2f}\t{[f'{xi:.2f}' for xi in x]}")
@@ -24,7 +26,7 @@ if x := de(f2, iters=500): print(f"2\t{f2(x):.2f}\t{[f'{xi:.2f}' for xi in x]}")
 
 # Rastrigin: min at (0,0,0)
 f3 = lambda x: 10*len(x) + sum(xi**2 - 10*m.cos(2*m.pi*xi) for xi in x)
-if x := de(f3, d=3, iters=300): print(f"3\t{f3(x):.2f}\t{[f'{xi:.2f}' for xi in x]}")
+if x := de(f3, d=3, n=30, iters=300): print(f"3\t{f3(x):.2f}\t{[f'{xi:.2f}' for xi in x]}")
 
 # Ackley: min at (0,0)
 f4 = lambda x: -20*m.exp(-.2*m.sqrt(sum(xi**2 for xi in x)/len(x))) \
