@@ -32,3 +32,4 @@ As the co-creator of the **PROMISE repository,** Prof. Menzies helped establish 
 Prof. Menzies has published over **300 papers**, with more than 2**4,000 citations**, and advised **24 Ph.D.** students. He is the  **editor-in-chief** of the Automated Software Engineering journal and an associate editor for IEEE TSE. His work continues to shape the future of software engineering, focusing on creating AI tools that are not only intelligent but also fair, transparent, and trustworthy. For more information, visit 
 http://timm.fyi.
  
+<img width="594" height="562" alt="image" src="https://github.com/user-attachments/assets/76c0da50-79c0-46b9-9eae-dacd39c2d074" />
