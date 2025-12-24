@@ -18,3 +18,7 @@ cause of pride
 cause of backpacking
 
 cause of supply chain dangers
+
+cause it fights a congitive problem
+
+cause of amazing discoveries
